@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://kit.fontawesome.com/9ddba5a981.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:'Times New Roman', Times, serif ;
+        }
+        body{
+            background: gainsboro;
+            font-size: 14px;
+           
+        }
+        .container{
+            width: 80%;
+            margin: 50px auto;
+        }
+        .container h1{
+            align-items: center;
+            color: red;
+        }
+
+        .contact-box{
+            background: blueviolet;
+            display: flex;
+            border-radius: 10px;
+        }
+        .contact-left{
+            flex-basis: 60%;
+            padding: 40px 60px;
+            color: white;
+        }
+        .contact-right{
+            flex-basis: 90%;
+            padding: 40px;
+            background:white ;
+            border-radius: 10px;
+        }
+        h1{
+            margin-bottom: 10px;
+        }
+        .container p{
+            margin-bottom: 40px;
+        }
+        .input-row{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .input-row .input-group{
+            flex-basis: 45%;
+        }
+        input{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+            padding-bottom: 5px;
+            padding: 4px;
+        }
+        textarea{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+            padding: 10px;
+        }
+        button{
+            background: blueviolet;
+            color: white;
+            width: 100px;
+            border: none;
+            outline: none;
+            height: 35px;
+            float: right;
+            border-radius: 5px;
+            box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+        }
+
+        tr td:first-child{
+            padding-right: 20px;
+        }
+        tr td{
+            padding-top: 20px;
+        }
+        .radio{
+            display: flex;
+          align-items: center;
+           justify-content: center;
+           margin-bottom: 4px;   
+        }
+        .social-links{
+            padding: 4px;
+            font-size: 20px;
+            text-decoration: none;
+            margin-top: 15%;
+        }
+        
+    </style>
+</head>
+<body>
+    
+        <div class="container">
+          <h1>Connect Us</h1>
+          <p>Any question or remarks? Just write us a message</p>
+
+          <div class="contact-box">
+            <div class="contact-left">
+                <h2>Contact Information</h2>
+                <br>
+                <p>Fill up the form and our team will get back to<br> your within 24 hours</p>
+                <table>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+0123 4567 8910</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>hello@flowbase.com</td>
+                    </tr>
+                    <tr>
+                        <td>Location</td>
+                        <td>102 Street 2714 Don</td>
+                    </tr>
+                </table>
+
+                <div class="social-links">
+                    <ul>
+                        <li>
+                            <i class="fa fa-instagram "></i>
+                            <i class="fa fa-youtube"></i>
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-twitter"></i>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+            </div>
+            
+            <div class="contact-right">
+                <form>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label> First Name</label>
+                            <input type="text" placeholder="First Name">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="xyz@gmail.com">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="text" placeholder="+1234567890">
+                        </div>
+                    </div>
+
+                    <h4>What the of website do you need?</h4>
+                    <div class="radio">
+
+                    <input type="radio" id="Web Design" name="os"/>
+                    <label for="Web Design">Web Design</label>
+
+                    <input type="radio" id="Web Development" name="os"/>
+                    <label for="Web Developmenr">Web Development</label>
+                    
+                    </div>
+
+                    <div>
+                    <label>Message</label>
+                    <textarea rows="3" placeholder="write your Message.."></textarea>
+                    </div>
+
+                    <button type="submit">Send Message</button>  
+                </form>
+
+            </div>  
+        </div>
+        </div>
+    
+</body>
+</html>
